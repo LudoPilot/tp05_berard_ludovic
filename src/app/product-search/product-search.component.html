@@ -1,0 +1,7 @@
+<input [(ngModel)]="searchTerm" placeholder="Rechercher par nom de produit" />
+<input [(ngModel)]="categorySearchTerm" placeholder="Rechercher par catégorie" />
+<ul>
+  <li *ngFor="let product of filterProducts()">
+    {{ product.name }} (Catégorie: {{ product.category }})
+  </li>
+</ul>
