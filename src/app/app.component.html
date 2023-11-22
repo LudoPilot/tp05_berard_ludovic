@@ -1,8 +1,13 @@
 <main>
-	<h1>Bienvenue dans le TP 3</h1>
-	<h2>Liste de tous les produits du catalogue</h2>
-	<app-product-list [products]="productsAll"></app-product-list>
-
+	<h1>Bienvenue</h1>
+	
+	<app-catalog></app-catalog>
+  
 	<h2>Chercher des produits par nom ou par catégorie</h2>
 	<app-product-search [products]="productsAll"></app-product-search>
+  
+	<hr>
+	<h2>Contenu du panier</h2>
+	<app-cart></app-cart>
 </main>
+  
